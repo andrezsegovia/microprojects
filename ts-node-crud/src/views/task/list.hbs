@@ -1,0 +1,23 @@
+<div class="row">
+    {{#each tasks}}
+    <div class="col-md-3 mt-2">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">{{title}}</h5>
+                <p class="card-text">{{description}}</p>
+            </div>
+            <div class="card-footer">
+                <div class="row">
+                    <div class="col-6">
+                        <a href="/task/edit/{{_id}}" class="btn btn-secondary btn-lg">Edit</a>
+                    </div>
+                    <div class="col-6">
+                        <a href="/task/delete/{{_id}}" class="btn btn-danger btn-lg">Delete</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {{/each}}
+
+</div>
